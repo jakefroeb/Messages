@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Write a Message" name="message"/>
+    <button type="submit">Submit</button>
+</form>
+Hi, {{name}}
+<br>
+Messages
+<br>
+<ul>
+    {{#messages}}
+    <li>{{.}}</li>
+    {{/messages}}
+</ul>
+
+</body>
+</html>
